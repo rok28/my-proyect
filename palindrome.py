@@ -1,6 +1,7 @@
 def main():
     palabra = input("Introduce la palabra: ")
-    palindromo = palabra == palabra[::-1]
+    w_palabra = palabra.replace(" ","")
+    palindromo = w_palabra == w_palabra[::-1]
     if palindromo:
         rest = "La palabra " + palabra + " es palindromo"
     else:
